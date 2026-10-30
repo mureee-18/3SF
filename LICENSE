@@ -1,0 +1,192 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+ Version 3, 19 November 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+ Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
+
+ Preamble
+
+ The GNU Affero General Public License is a free, copyleft license for software
+ and other works, specifically designed to ensure cooperation with a user community
+ when the software is run on a server.
+
+ The licenses for most software and other practical works take away your
+ freedom to share and change the works.  By contrast, the GNU General Public
+ License is intended to guarantee your freedom to share and change all versions
+ of a program--to make sure it remains free software for all its users.  We use
+ the GNU Affero General Public License for most software; the Affero license
+ was designed specifically for the case of software which is used on a web site.
+
+ The key difference between the Affero license and the ordinary GPL is the
+ following: In the GPL, there is no requirement to release the source code of
+ a work solely by reason of running it on a server.  The Affero license ensures
+ that source code which is used on a web site must also be made available to
+ the users of that site.
+
+ When we speak of free software, we are referring to freedom, not price.  Our
+ GNU General Public Licenses are designed to make sure that you have the
+ freedom to distribute copies of free software (and charge for them if you
+ wish), that you receive source code or can get it if you want it, that you
+ can change the software or use pieces of it in new free programs, and that
+ you know you can do these things.
+
+ Developers that use our GNU General Public Licenses protect your rights with
+ two steps: (1) assert copyright on the software, and (2) offer you this
+ License which gives you legal permission to copy, distribute and/or modify
+ the software.
+
+ A "work based on the Program" means the Program or any derivative work
+ under copyright law: the latter includes works containing the Program or
+ a portion of it, either as microcode or as a higher-level language.  To
+ "propagate" a work means to do anything with it that would make you
+ directly or indirectly liable for infringement under applicable copyright
+ law except executing it on a computer or modifying it for private use.  It
+ does not include running it on a computer or modifying the software for
+ private use.
+
+ An interaction with a user through a computer network, with the source
+ code of the system not being on the same side of the network as the user,
+ is called an "interaction".  Making, using, selling, offering for sale,
+ or importing the Program would each constitute a form of propagation that
+ may under some circumstances invoke section 3 of the ordinary GPL.
+
+ Source Code, for a work, means the preferred form of the work for
+ making modifications to it.  For an executable work, complete source
+ code means all the source code for all modules it contains, plus any
+ associated interface definition files, plus the scripts used to
+ control compilation and installation of the executable.  However, as a
+ special exception, the source code distributed need not include anything
+ that is normally distributed (in either source or binary form) on the
+ same component as the executable.
+
+ If the release of a Program or part of it to the public domain under the
+ ordinary GNU General Public License or to another widely used free license
+ in a manner consistent with the intent of this section, the source code
+ made available need not include any element that is a natural language
+ implementation detail or a system library which the Program's developer
+ (or a preceding developer) has added to the work solely to make it more
+ efficient or to facilitate interactions with operating facilities.
+
+ Permission to copy, distribute, modify and sublicense this software is
+ granted, provided that the following conditions are met:
+
+ 0. You must cause the files modified to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+ 1. You must cause the files that you distribute to carry prominent notices
+    stating that you changed them and the date of any change.  You must
+    cause the source form of the file to carry prominent notices
+    stating the date and the source of any change you made.  You must
+    license the entire work under this License.  You must not add any
+    restriction to the exercise of the rights granted under this License.
+
+ 2a. You must cause the whole work to be licensed at no charge to all third
+    parties (including future recipients) under this License.  If your
+    work refers to a license version number, you may specify that version
+    number explicit.  You may add a statement of the additional permissions
+    you have granted under Section 7.
+
+ 2b. You must cause the whole work, excluding any parts that are
+    not derived from the Program, to be licensed at no charge to all third
+    parties (including future recipients) under this License.  If your
+    work refers to a license version number, you may specify that version
+    number explicit.
+
+ 3. You may convey the work under this License.  You must make sure that
+    the whole work is free for the users to modify, under the terms of this
+    License.  You must also make sure that any user who obtains the work
+    from you has a valid copyright notice for the work, and that any
+    derivative works that the user makes are under the terms of this
+    License.  You must not impose any additional restrictions on the users'
+    exercise of the rights granted under this License.
+
+ 4a. You may convey the Program (or a portion of it, if it is separate)
+    in object code or executable form under the terms of this License, provided
+    that you also convey the complete corresponding machine-readable source
+    code under the terms of this License.  If your conveyance of the object
+    code is primarily on a durable physical medium, you may convey the source
+    code on a durable physical medium.  You may offer equivalent access to
+    download from a designated place.  You may offer source code in a
+    package whose form is based on the form used to distribute source code.
+
+ 4b. You may convey only user product of the Program in, or on a physical
+    medium, provided that you, in good faith, comply with either of the
+    following:  (1) You must, in the media containing the user product or
+    its physical medium, convey the corresponding source code under this
+    License, on a durable physical medium customarily used for software
+    exchange.  (2) You must, in good faith, make the source code available
+    to anyone to whom you convey the user product, under the terms of this
+    License, on a durable physical medium customarily used for software
+    exchange.  You must, in good faith, take reasonable steps in such
+    conveyation to ensure that the source code can be reached and used.
+    For avoidance of doubt, this provision is experimental.  If it is
+    subsequently found to be impracticable, the subsection may be
+    eliminated in future version of this License.
+
+ 5. You may convey the Program (or a portion of it, if it is separate) in
+    object code or executable form under the terms of this License, provided
+    that you also convey the complete corresponding machine-readable source
+    code under the terms of this License.  If your conveyance of the object
+    code is primarily on a durable physical medium, you may convey the source
+    code on a durable physical medium.  You may offer equivalent access to
+    download from a designated place.  You may offer source code in a
+    package whose form is based on the form used to distribute source code.
+
+ 6. Notwithstanding the terms of Section 4, you may also convey the Program
+    (or a portion of it, if it is separate) in object code or executable form
+    by offering access to it from a designated place (gratis or for a fee),
+    provided that you make the source code available to the party who makes
+    the request, under the terms of this License, and the source code is not
+    subject to subsection 4.  You may charge a fee for the physical act of
+    conveying the source code.  You may offer equivalent access to download
+    the source code from a designated place.  You may offer source code in a
+    package whose form is based on the form used to distribute source code.
+
+ 7. In your product, under the terms of this License, you may place one
+    or more of the following statements, if you wish, to mention the
+    additional permissions you have given: (1) You may remove the requirement
+    to retain a notice that the source code of the Program is available under
+    this License; (2) You may add a statement that the source code of the
+    Program is available under a different license; (3) You may add a statement
+    that the source code of the Program is available from the Free Software
+    Foundation; (4) You may add a statement that the source code of the
+    Program is available from the Open Source Initiative.  If you convey
+    the Program (or a portion of it, if it is separate) in object code or
+    executable form under the terms of this License, you may convey the
+    source code in the same manner as object code, as described in Section 4.
+
+ Licensing and Attribution
+
+ You may offer a separate license to the Program to a party who has
+ received it from you under this License, provided that such separate license
+ is not inconsistent with the terms of this License.  If you convey the
+ Program (or a portion of it, if it is separate) in object code or executable
+ form under the terms of this License, you may convey the source code in
+ the same manner as object code, as described in Section 4.
+
+ Termination
+
+ You may not propagate or modify the Program except as expressly provided
+ under this License.  Any attempt otherwise to propagate or modify it is
+ void, and will automatically terminate your rights under this License.  However,
+ your rights under this License are not terminated if the party that received
+ a copy from you, or a third party, reasonably attempts to obtain and use the
+ source code.  If you cannot convey the Program so that it satisfies
+ whatsoever conditions, then your best course of action is to cease
+ distribution of the Program.
+
+ Acceptance Not Required for Having Copies
+
+ You are not required to accept this License in order to receive a copy of
+ the Program.  Propagating a work under any other public license does not
+ extend your rights under this License.  However, nothing prevents you from
+ accepting this License and, if you do, you may exercise your rights under
+ this License to the fullest extent permitted.  If you fail to comply with
+ this License, however, your rights under this License will be terminated.
+
+ End of Terms and Conditions
+
+ See the GNU General Public License for more details.
+
+ https://www.gnu.org/licenses/agpl-3.0.html
