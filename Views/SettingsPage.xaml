@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreeSF.Views.SettingsPage"
+             Title="設定">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28" Spacing="16" MaximumWidthRequest="760" HorizontalOptions="Fill">
+
+            <Label Text="{Binding Title}" Style="{StaticResource PageTitle}" />
+            <Label Text="アプリの動作と表示を変更します。" Style="{StaticResource PageSubtitle}" />
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="プロフィール" Style="{StaticResource SectionTitle}" />
+                    <Label Text="表示名" Style="{StaticResource FieldLabel}" Margin="0,8,0,0" />
+                    <Entry Text="{Binding UserName}" Placeholder="表示名を入力" />
+                    <HorizontalStackLayout Spacing="6" Margin="0,4,0,0">
+                        <Label Text="プレビュー:" Style="{StaticResource HintText}" VerticalOptions="Center" />
+                        <Label Text="{Binding PreviewName}" Style="{StaticResource BodyText}" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="外観" Style="{StaticResource SectionTitle}" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12" Margin="0,8,0,0">
+                        <VerticalStackLayout Spacing="2">
+                            <Label Text="ダークテーマを使う" Style="{StaticResource BodyText}" />
+                            <Label Text="切り替えるとすぐに反映されます。「保存」で次回起動時にも維持されます。"
+                                   Style="{StaticResource HintText}" />
+                        </VerticalStackLayout>
+                        <Switch Grid.Column="1" IsToggled="{Binding IsDarkTheme}" VerticalOptions="Center" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="起動" Style="{StaticResource SectionTitle}" />
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12" Margin="0,8,0,0">
+                        <VerticalStackLayout Spacing="2">
+                            <Label Text="最小化した状態で起動する" Style="{StaticResource BodyText}" />
+                            <Label Text="設定値は保存されますが、起動時の反映処理は未実装です（拡張ポイント）。"
+                                   Style="{StaticResource HintText}" />
+                        </VerticalStackLayout>
+                        <Switch Grid.Column="1" IsToggled="{Binding StartMinimized}" VerticalOptions="Center" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Label Text="未保存の変更があります"
+                   IsVisible="{Binding IsDirty}"
+                   TextColor="{StaticResource Warning}"
+                   FontSize="12" />
+
+            <HorizontalStackLayout Spacing="8" HorizontalOptions="End">
+                <Button Text="設定フォルダーを開く"
+                        Command="{Binding OpenDataFolderCommand}"
+                        Style="{StaticResource SecondaryButton}" />
+                <Button Text="保存"
+                        Command="{Binding SaveCommand}"
+                        Style="{StaticResource PrimaryButton}" />
+            </HorizontalStackLayout>
+
+            <Label Text="{Binding StatusMessage}" Style="{StaticResource HintText}" />
+            <Label Text="{Binding SettingsPathLabel}" Style="{StaticResource HintText}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

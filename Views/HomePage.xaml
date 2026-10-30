@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreeSF.Views.HomePage"
+             Title="ホーム">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28" Spacing="16">
+
+            <Label Text="{Binding Title}" Style="{StaticResource PageTitle}" />
+            <Label Text="{Binding Subtitle}" Style="{StaticResource PageSubtitle}" />
+
+            <Grid ColumnDefinitions="*,*,*" ColumnSpacing="12">
+                <Border Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="項目数" Style="{StaticResource CardCaption}" />
+                        <Label Text="{Binding ItemCount}" Style="{StaticResource CardValue}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="1" Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="稼働時間" Style="{StaticResource CardCaption}" />
+                        <Label Text="{Binding UptimeText}" Style="{StaticResource CardValue}" />
+                    </VerticalStackLayout>
+                </Border>
+                <Border Grid.Column="2" Style="{StaticResource Card}">
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="バージョン" Style="{StaticResource CardCaption}" />
+                        <Label Text="{Binding Version}" Style="{StaticResource CardValue}" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="12">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                        <Label Text="最近の項目"
+                               Style="{StaticResource SectionTitle}"
+                               VerticalOptions="Center" />
+                        <HorizontalStackLayout Grid.Column="1" Spacing="8">
+                            <Button Text="追加"
+                                    Command="{Binding AddItemCommand}"
+                                    Style="{StaticResource PrimaryButton}" />
+                            <Button Text="クリア"
+                                    Command="{Binding ClearItemsCommand}"
+                                    Style="{StaticResource SecondaryButton}" />
+                        </HorizontalStackLayout>
+                    </Grid>
+
+                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Items}" Spacing="6">
+                        <BindableLayout.ItemTemplate>
+                            <DataTemplate>
+                                <Border Style="{StaticResource ItemChip}">
+                                    <Label Text="{Binding .}" Style="{StaticResource BodyText}" />
+                                </Border>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </VerticalStackLayout>
+
+                    <Label Text="項目がありません。「追加」を押して作成してください。"
+                           Style="{StaticResource HintText}"
+                           IsVisible="{Binding IsEmpty}" />
+
+                    <Label Text="{Binding StatusMessage}" Style="{StaticResource HintText}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Card}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="次のステップ" Style="{StaticResource SectionTitle}" />
+                    <Label Text="1. Views/ に画面 (ContentPage) を追加する" Style="{StaticResource HintText}" />
+                    <Label Text="2. ViewModels/ にロジック (INotifyPropertyChanged) を追加する" Style="{StaticResource HintText}" />
+                    <Label Text="3. AppShell.xaml の ShellContent に登録する" Style="{StaticResource HintText}" />
+                    <Label Text="設定はアプリのデータフォルダーに settings.json として保存されます。"
+                           Style="{StaticResource HintText}"
+                           Margin="0,6,0,0" />
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

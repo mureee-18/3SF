@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThreeSF.Views.AboutPage"
+             Title="このアプリについて">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28" Spacing="16" MaximumWidthRequest="760" HorizontalOptions="Fill">
+
+            <Label Text="{Binding Title}" Style="{StaticResource PageTitle}" />
+            <Label Text="{Binding Subtitle}" Style="{StaticResource PageSubtitle}" />
+
+            <Border Style="{StaticResource Card}">
+                <Grid ColumnDefinitions="170,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="10">
+                    <Label Grid.Row="0" Grid.Column="0" Text="バージョン" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Version}" Style="{StaticResource BodyText}" />
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="ランタイム" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Framework}" Style="{StaticResource BodyText}" />
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="OS" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding OperatingSystem}" Style="{StaticResource BodyText}" />
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="アーキテクチャ" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Architecture}" Style="{StaticResource BodyText}" />
+
+                    <Label Grid.Row="4" Grid.Column="0" Text="設定ファイル" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding DataPath}" Style="{StaticResource BodyText}" />
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="インストール先" Style="{StaticResource FieldLabel}" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding InstallPath}" Style="{StaticResource BodyText}" />
+                </Grid>
+            </Border>
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="設定フォルダーを開く"
+                        Command="{Binding OpenDataFolderCommand}"
+                        Style="{StaticResource PrimaryButton}" />
+                <Button Text="インストールフォルダーを開く"
+                        Command="{Binding OpenInstallFolderCommand}"
+                        Style="{StaticResource SecondaryButton}" />
+            </HorizontalStackLayout>
+
+            <Label Text="{Binding StatusMessage}" Style="{StaticResource HintText}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
